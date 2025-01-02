@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css ">
+
+    <style>
+        .navbar-top {
+            background-color: black;
+            color: white;
+            padding: 5px 15px;
+            text-align: center;
+        }
+
+        .navbar-brand img {
+            box-sizing: border-box;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: black;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+
+        .nav-link:hover {
+            color: red;
+        }
+
+
+        h1 {
+            padding-left: 2px;
+            padding-top: 2rem;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: rgb(77, 75, 75);
+        }
+
+        .list-group-item {
+            padding-left: 2px;
+            width: 20rem;
+            border: none;
+            font-size: 20px;
+            color: rgb(77, 75, 75);
+        }
+
+        .list-group-item:hover {
+            text-decoration: underline;
+        }
+
+        .container1-lg {
+            border: none;
+            width: 90rem;
+            height: 293rem;
+            margin-left: 25rem;
+            box-sizing: border-box;
+        }
+
+        .container-lg {
+            border: none;
+            margin-left: 10px;
+            width: 22rem;
+            height: auto;
+            margin-top: -331rem;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: rgb(33, 73, 33);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .p1 {
+            font-size: 25px;
+            color: rgb(33, 73, 33);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .img-fluid {
+            padding-top: 40px;
+            margin-left: 60px;
+            height: 700px;
+            width: 700px;
+            transition: 0.5s;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.1);
+        }
+
+        h3 {
+            margin-left: 59rem;
+            margin-top: -30rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .P2 {
+            font-size: 25px;
+            padding-left: 50rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .img-fluid1 {
+            margin-top: -35rem;
+            height: 700px;
+            width: 700px;
+            margin-left: 45rem;
+            transition: 0.5s;
+        }
+
+        .img-fluid1:hover {
+            transform: scale(1.1);
+        }
+
+        .b2 {
+            border: none;
+            margin-top: 10px;
+            height: 790px;
+        }
+
+        h4 {
+            padding-top: 15rem;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 10rem;
+            font-size: 25px;
+        }
+
+        .p3 {
+            font-size: 25px;
+            padding-left: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .b3 {
+            border: none;
+            margin-top: 10px;
+            height: 790px;
+        }
+
+        .b1 {
+            border: none;
+            margin-top: 10px;
+            height: 790px;
+        }
+
+        .p4 {
+            font-size: 25px;
+            padding-left: 50rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .b4 {
+            border: none;
+            margin-top: 10px;
+            height: 820px;
+        }
+
+        .img-fluid4 {
+            margin-top: -30rem;
+            height: 700px;
+            width: 700px;
+            margin-left: 45rem;
+            transition: 0.5s;
+        }
+
+        .img-fluid4:hover {
+            transform: scale(1.1);
+        }
+
+        #h6 {
+            padding-top: 10rem;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 10rem;
+            font-size: 25px;
+        }
+
+        .p5 {
+            font-size: 25px;
+            padding-left: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .b5 {
+            border: none;
+            margin-top: 10px;
+            height: 820px;
+        }
+
+        #h7 {
+            margin-left: 59rem;
+            margin-top: -33rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .p6 {
+            font-size: 25px;
+            padding-left: 50rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .b6 {
+            border: none;
+            margin-top: 10px;
+            height: 800px;
+        }
+
+        .img-fluid5 {
+            margin-top: -30rem;
+            height: 700px;
+            width: 700px;
+            margin-left: 45rem;
+            transition: 0.5s;
+
+        }
+
+        .img-fluid5:hover {
+            transform: scale(1.1);
+        }
+
+        .p7 {
+            font-size: 25px;
+            padding-left: 20px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #h8 {
+            padding-top: 15rem;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 10rem;
+            font-size: 25px;
+        }
+
+        #h9 {
+            margin-left: 59rem;
+            margin-top: -30rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            margin-top: 15rem;
+            overflow: visible;
+            box-sizing: border-box;
+            border: none;
+            
+        }
+
+
+        .footer h5 {
+            font-weight: bold;
+            margin-bottom: 15px;
+
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar-top">
+        <span>RED ALERT: SHOP YOUR FAVORITE ITEMS!</span>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="img" height="150px" width="220px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="plant.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PLANTS AND SEEDS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="plant.html">INDOOR PLANTS</a></li>
+                            <li><a class="dropdown-item" href="plant.html">OUTDOOR PLANTS</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="plant.html">SEEDS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="garden care.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            GARDEN CARE
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="garden care.html">SOIL</a></li>
+                            <li><a class="dropdown-item" href="garden care.html">FERTILIZER</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="garden care.html">PEPTICIDES</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="accessories.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ACCESSORIES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="accessories.html">GARDEN TOYS</a></li>
+                            <li><a class="dropdown-item" href="accessories.html">DECORATIVE PEBBLES</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="accessories.html">TOOLS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="tips & techniquies.html">TIPS AND TECHNIQUES</a></li>
+
+                </ul>
+                <div class="d-flex">
+                    <a class="nav-link" href="add to cart.html"><i class="fa-solid fa-cart-shopping"></i> </a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-heart"></i></a>
+                    <a class="nav-link" href="login.html"><i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+
+       </div>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+    </nav>
+
+    
+
+
+
+
+    <div class="container1-lg mt-5">
+        <h2><span class="fz-25px text-center d-block fw-bold text-decoration-underline">GARDENING BOOKS</span></h2>
+        <p class="p1"><span class="text-center d-block fw-lighter">"Discover Expert Knowledge To Grow Your Dream
+                Garden."</span> </p>
+        <hr>
+        <!-- book1 -->
+        <div class="b1">
+            <a href="https://a.co/d/gsWlvTJ">
+                <img src="/e-project/assets/images/book1 (1).jpg" class="img-fluid pt-40px ml-60px" alt="click">
+            </a>
+            <h3>BOOK DESCRIPITION</h3>
+            <P class="P2">Houseplants are a great way to decorate, ease stress, and stay connected with nature when
+                you're
+                indoors. If
+                you're looking to grow your collection and need some advice, Houseplants for Beginners has all the
+                information you'll need to successfully care for your plants and help them thrive.</P>
+        </div>
+        <!-- book2 -->
+        <div class="b2">
+            <h4>BOOK DESCRIPITION</h4>
+            <p class="p3">Gardeners never forget the first time they enjoyed a ripe,
+                <br>juicy tomato plucked straight from the vine or
+                savored a crisp,<br> fresh salad made with ingredients from their backyard. Start <br>growing your first
+                crop
+                today withVegetable Gardening for <br>Beginners. Host of The Beginner's Garden podcast Jill <br>McSheehy
+                offers
+                simple guidance to first-time gardeners <br>who will be amazed at how easy it can be to create a
+                thriving
+                <br>garden.
+            </p>
+            <a href="https://a.co/d/apRSo3k">
+                <img src="/e-project/assets/images/book2 (1).jpg" class="img-fluid1" alt="click">
+            </a>
+        </div>
+        <!-- book3 -->
+        <div class="b3">
+            <a href="https://a.co/d/2Do13hk">
+                <img src="/e-project/assets/images/book3.jpg" class="img-fluid" alt="click">
+            </a>
+            <h3 id="h9">BOOK DESCRIPITION</h3>
+            <p class="p4">Do you find joy in seeing a plant grow from seed to flower? Has your main setback for
+                maintaining a
+                successful garden been finding enough time to tend it?
+
+                Whether you have a windowsill garden or a backyard full of flora, finding time to garden can seem
+                impossible. But with just 5 minutes a day, you can be sure your plants have all they need to go from
+                seed to delicious harvest. Nicole Johnsey Burke, author of Kitchen Garden Revival and Leaves, Roots
+                & Fruit and founder of Gardenary, Inc., guides you through the different planting seasons</p>
+        </div>
+        <!-- book4 -->
+        <div class="b4">
+            <h4 id="h6">BOOK DESCRIPITION</h4>
+            <p class="p5">A one-of-a-kind guide to growing, cutting, and arranging the most <br>beautiful roses in the
+                world, Garden Roses belongs in the hands of <br> every flower lover. Created by Gracielinda Poulson, the
+                preeminent <br>rose grower in the country and proprietor of Grace Rose Farm, each <br> page of this
+                glorious book
+                steeps the reader in the iconic mystique <br>of the rose: Its breathtaking beauty, in hundreds of
+                photographs.<br> Its secrets, in the incredible breadth of information on the varieties <br> best suited
+                for
+                cutting and how to raise them to thrive in the garden <br> or a container, in almost any climate zone.
+
+                <a href="https://a.co/d/0KPg10a">
+                    <img src="/e-project/assets/images/book4.jpg" class="img-fluid4" alt="click">
+                </a>
+        </div>
+        <!-- book5 -->
+        <div class="b5">
+            <a href="https://a.co/d/26kV3BS">
+                <img src="/e-project/assets/images/book5.jpg" class="img-fluid" alt="click">
+            </a>
+            <h3 id="h7">BOOK DESCRIPITION</h3>
+            <p class="p6">Do you dream of walking through your own kitchen garden with baskets full of delicious food
+                you grew
+                yourself? But are you waiting to begin because you think you don't have enough space, sun, time, or
+                experience?
+
+                Then consider this: Plants want to grow. And when you match a plant's needs to your own resources,
+                you're just one step away from success in the kitchen garden.
+
+                Nicole Johnsey Burke—founder of Gardenary, Inc., and author of Kitchen Garden Revival—is your expert
+                guide for growing your own fresh, organic food every day of the year, no matter where you grow. </p>
+        </div>
+        <!-- book6 -->
+        <div class="b6">
+            <h4 id="h8">BOOK DESCRIPITION</h4>
+            <p class="p7">Dreaming of having the perfect garden? Does it have a vegetable <br> patch? Classic borders or
+                flowers to attract wildlife? A picturesque <br> garden for all to marvel at is achievable with this
+                gardening
+                guide, <br>which gives you vital tools to achieve whatever you desire for <br> your dream garden.
+            </p>
+            <a href="https://a.co/d/inAigxu">
+                <img src="/e-project/assets/images/book6.jpg" class="img-fluid5" alt="click">
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="/e-project/assets/images/WhatsApp_Image_2024-12-27_at_9.42.28_PM-removebg-preview.png" alt="logo" height="200px" height="250px">
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-md-2">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Terms</a></li>
+                        <li><a href="#">Warranty & Repair</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Payment Policy</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Kors Services</a></li>
+                    </ul>
+                </div>
+                <!-- My Account -->
+                <div class="col-md-2">
+                    <h5>My Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Create Account</a></li>
+                        <li><a href="#">Accounts</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">KORSVIP</a></li>
+                        <li><a href="#">Give 10%, Get 10%</a></li>
+                    </ul>
+                </div>
+                <!-- Company -->
+                <div class="col-md-2">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Supply Chain Disclosure</a></li>
+                        <li><a href="#">Corporate Social Responsibility</a></li>
+                    </ul>
+                </div>
+                <!-- Subscription Form -->
+                <div class="col-md-4">
+                    <h5>Sign Up</h5>
+                    <p>Sign up for updates from Tree Garden World and receive 10% off your first order.</p>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="email" placeholder="Enter your mail" aria-label="Email">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="social-icons m-4">
+                        <a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="container-fluid p-2 bg-dark">
+        <p class="text-light text-center">Copyright © 1997-2024, Tree Garden World. All rights reserved.</p>
+         
+    </div>
+
+
+
+
+
+    <div class="container-lg">
+
+        <h1>SOIL PREPARATION</h1>
+        <ul class="list-group mt-2">
+            <li class="list-group-item">Soil testing</li>
+            <li class="list-group-item">Composting</li>
+            <li class="list-group-item">Mulching</li>
+            <li class="list-group-item">Soil Aeration</li>
+        </ul>
+
+
+        <h1>WATERING PRACTICE</h1>
+        <ul class="list-group mt-2">
+            <li class="list-group-item">Drip Irrigation</li>
+            <li class="list-group-item">Water Conservation</li>
+            <li class="list-group-item">Proper Watering Times</li>
+        </ul>
+
+
+        <h1>PLANTING TECHNIQUES</h1>
+        <ul class="list-group mt-2">
+            <li class="list-group-item">Companion Planting</li>
+            <li class="list-group-item">Succession Planting</li>
+            <li class="list-group-item">Seasonal Planting</li>
+            <li class="list-group-item">Crop Rotation</li>
+        </ul>
+
+
+        <h1>PEST AND DISEASE</h1>
+        <ul class="list-group mt-2">
+            <li class="list-group-item">Integrated Pest Management</li>
+            <li class="list-group-item">Organic Pesticides</li>
+            <li class="list-group-item">Beneficial Insects</li>
+            <li class="list-group-item">Disease Prevention</li>
+
+        </ul>
+
+
+        <h1>ADDITIONAL RESOURCES</h1>
+        <ul class="list-group mt-2"></ul>
+        <li class="list-group-item">Gardening Books</li>
+        <li class="list-group-item">Online Gardening Communities</li>
+        <li class="list-group-item">Local Gardening Workshops</li>
+        </ul>
+
+        <h1>GARDENING TOOLS</h1>
+        <ul class="list-group mt-2"></ul>
+        <li class="list-group-item">Hand Trowels</li>
+        <li class="list-group-item">Pruning Shears</li>
+        <li class="list-group-item">Garden Forks</li>
+        <li class="list-group-item">Spades</li>
+        <li class="list-group-item">Wheelbarrows</li>
+        <li class="list-group-item">Rakes</li>
+        </ul>
+
+        <h1>ORGANIC GARDENING</h1>
+        <ul class="list-group mt-2"></ul>
+        <li class="list-group-item">Natural Fertilizers</li>
+        <li class="list-group-item">Composting Techniques</li>
+        <li class="list-group-item">Organic Mulches</li>
+        <li class="list-group-item">Beneficial Insects</li>
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
